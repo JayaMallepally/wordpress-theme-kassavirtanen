@@ -5,4 +5,4 @@
  *
  */
 
-require('./stylesheets/main.scss');
+require('./sass/main.scss');

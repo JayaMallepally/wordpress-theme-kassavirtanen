@@ -1,0 +1,29 @@
+{
+  "name": "wordpress-theme-kassavirtanen",
+  "version": "1.0.0",
+  "description": "Wordpress Kassavirtanen twenty-sixteen child theme",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf assets/stylesheet",
+    "predist": "rimraf assets/stylesheet",
+    "dist": "webpack --progress --colors",
+    "dev": "webpack --progress --colors --watch",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.in.phz.fi:phz/wordpress-theme-kassavirtanen.git"
+  },
+  "author": "Skylar Kong",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^4.1.1",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
+  }
+}

@@ -1,11 +1,16 @@
 @import "variables";
 
+body {
+  
+}
+
 .site {
 
   margin: 0;
+  padding: 0;
 
   &-header {
-    padding: 0 35px 0 75px;
+    padding: 0 10px 0 25px;
   }
 
 }

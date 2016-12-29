@@ -1,5 +1,9 @@
 @import "variables";
 
+body, button, input, select, textarea {
+  font-family: $main-default-font;
+}
+
 .site {
 
   margin: 0 auto;
@@ -16,9 +20,20 @@
     padding: 0;
 
     &-main {
-      margin: -10px 0;
-      padding: 0 50px 0 100px;
+      padding: 0 50px 0 50px;
     }
+  }
+
+  &-footer {
+    background-color: $main-layout-color;
+  }
+
+  &-info {
+
+    p {
+      margin: 0 auto;
+    }
+
   }
 }
 
@@ -26,19 +41,13 @@
 
   &-navigation {
     font-family: $main-default-font;
-    text-transform: lowercase;
 
     li:first-child {
       width: 100px;
     }
 
     li:nth-child(2) {
-      width: 135px;
-    }
-
-    li:nth-child(3) {
-      width: 150px;
-      padding-left: -100px;
+      width: 120px;
     }
   }
 }
@@ -47,8 +56,6 @@
 
   &-image {
 
-    margin: -15px 0 0 0;
-
     img {
       width: 100%;
     }
@@ -56,12 +63,8 @@
   }
 }
 
-/*
-.dropdown-toggle,
-        .main-navigation ul .dropdown-toggle.toggled-on,
-        .menu-toggle,
-        .site-header .social-navigation,
-        .site-footer .main-navigation {
-                display: none;
-        }
-*/
+#mainNaviButton {
+  text-transform: none;
+  font-family: $main-default-font;
+  font-weight: 600;
+}

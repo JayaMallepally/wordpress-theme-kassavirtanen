@@ -1,3 +1,6 @@
+body, button, input, select, textarea {
+  font-family: "Open Sans"; }
+
 .site {
   margin: 0 auto;
   padding: 0; }
@@ -8,31 +11,23 @@
   .site-header {
     padding: 0; }
     .site-header-main {
-      margin: -10px 0;
-      padding: 0 50px 0 100px; }
+      padding: 0 50px 0 50px; }
+  .site-footer {
+    background-color: #44c0cc; }
+  .site-info p {
+    margin: 0 auto; }
 
 .main-navigation {
-  font-family: "Open Sans";
-  text-transform: lowercase; }
+  font-family: "Open Sans"; }
   .main-navigation li:first-child {
     width: 100px; }
   .main-navigation li:nth-child(2) {
-    width: 135px; }
-  .main-navigation li:nth-child(3) {
-    width: 150px;
-    padding-left: -100px; }
+    width: 120px; }
 
-.header-image {
-  margin: -15px 0 0 0; }
-  .header-image img {
-    width: 100%; }
+.header-image img {
+  width: 100%; }
 
-/*
-.dropdown-toggle,
-        .main-navigation ul .dropdown-toggle.toggled-on,
-        .menu-toggle,
-        .site-header .social-navigation,
-        .site-footer .main-navigation {
-                display: none;
-        }
-*/
+#mainNaviButton {
+  text-transform: none;
+  font-family: "Open Sans";
+  font-weight: 600; }

@@ -41,7 +41,28 @@ function load_fonts() {
     wp_enqueue_style( 'et-googleFonts' );
 }
 
+function vendor_script_jquery() {
+
+    wp_enqueue_script( 'vendor-jquery',
+        get_stylesheet_directory_uri() . '/scripts/jquery-3.1.1.min.js',
+        array(),
+        null,
+        false
+    );
+}
+
+function cashflow_react_script() {
+
+    wp_enqueue_script( 'cashflow-react',
+        get_stylesheet_directory_uri() . '/scripts/app.js',
+        array(),
+        null,
+        true
+    );
+}
+
 add_action( 'wp_enqueue_scripts', 'kassavirtanen_scripts_style' );
 add_action( 'wp_print_styles', 'load_fonts' );
+add_action( 'wp_enqueue_scripts', 'vendor_script_jquery')
 
 ?>

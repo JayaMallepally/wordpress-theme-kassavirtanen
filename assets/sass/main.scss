@@ -1,4 +1,5 @@
 @import "variables";
+@import "functions";
 
 body, button, input, select, textarea {
   font-family: $main-default-font;
@@ -6,8 +7,12 @@ body, button, input, select, textarea {
 
 .site {
 
-  margin: 0 auto;
+  margin: $margin-auto;
   padding: 0;
+
+  &-content {
+    padding: 0;
+  }
 
   &-inner {
     max-width: 4096px;
@@ -26,14 +31,70 @@ body, button, input, select, textarea {
 
   &-footer {
     background-color: $main-layout-color;
+    padding-top: 50px;
   }
 
   &-info {
 
     p {
-      margin: 0 auto;
+      margin: $margin-auto;
     }
 
+  }
+}
+
+.afc {
+
+  &-image {
+    overflow: hidden;
+    max-height: 280px;
+    margin-bottom: 25px;
+  }
+
+  &-description {
+    margin: $margin-auto;
+    text-align: center;
+  }
+
+  &-description {
+    margin: 0 250px;
+
+  }
+
+  &-divider {
+
+    background-color: $main-layout-color;
+    margin-bottom: 25px;
+    color: $white-color;
+
+    padding: 10px 0;
+
+    p {
+      margin: 0;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    span {
+      padding: 0 25px;
+      margin-left: 50px;
+      border: solid 1px $white-color;
+    }
+  }
+
+  &-repeater {
+
+    margin: $margin-auto;
+
+    &-post {
+
+
+
+      img {
+        width: 25%;
+        height: auto;
+      }
+    }
   }
 }
 

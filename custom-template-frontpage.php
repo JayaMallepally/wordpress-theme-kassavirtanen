@@ -8,7 +8,7 @@
  *
  */
 
-get_header(); ?>
+get_header(); wp_reset_query(); ?>
 
 
 <?php
@@ -31,25 +31,27 @@ get_header(); ?>
 <?php the_field('home_divider'); ?>
 
 <?php
-$rows = get_field('home_post_repeater');
-
 echo '<div class="afc-repeater">';
+echo '<div class="row">';
 
-if ($rows) {
+//$frontpage_post_object_left = get_posts('cat=11');
+//$frontpage_post_object_middle = get_posts('cat=9');
+//$frontpage_post_object_right = get_posts('cat=10');
 
-    foreach ( $rows as $row ) {
+$post_object = get_field( 'frontpage_post_left', 'category_11' );
 
-        $row_image_url = $row['post_image']['url'];
-        $row_image_alt = $row['post_image']['alt'];
-        $row_post_content = $row['post_content'];
-
-        echo "<div class='afc-repeater-post'>\n
-                <img src='$row_image_url' alt='$row_image_alt'>\n
-                <p>$row_post_content</p>\n
-              </div>\n";
-    }
+if ($post_object) {
+    echo $post_object;
+} else {
+    echo "empty";
 }
 
+//echo '<pre>';
+//print_r( $post_object );
+//echo '</pre>';
+
+
+echo '</div>';
 echo '</div>';
 
 ?>

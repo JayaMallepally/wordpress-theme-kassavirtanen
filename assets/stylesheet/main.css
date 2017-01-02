@@ -47,7 +47,7 @@ body, button, input, select, textarea {
     border: solid 1px #ffffff; }
 
 .afc-repeater {
-  margin: 0 auto; }
+  margin: 0 100px; }
   .afc-repeater-post img {
     width: 25%;
     height: auto; }

@@ -4,8 +4,8 @@
   "description": "Wordpress Kassavirtanen twenty-sixteen child theme",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf assets/stylesheet",
-    "predist": "rimraf assets/stylesheet",
+    "clean": "rimraf assets/stylesheet/main.css; rimraf assets/sass-dummy.js",
+    "predist": "rimraf assets/stylesheet/main.css; rimraf assets/sass-dummy.js",
     "dist": "webpack --progress --colors",
     "dev": "webpack --progress --colors --watch",
     "test": "test"

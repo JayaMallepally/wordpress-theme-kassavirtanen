@@ -8,7 +8,7 @@
  *
  */
 
-get_header(); wp_reset_query(); ?>
+get_header(); ?>
 
 
 <?php
@@ -23,37 +23,55 @@ get_header(); wp_reset_query(); ?>
         $alt = $image['alt'];
 ?>
         <img src="<?php echo $url ?>" alt="<?php echo $alt ?>" />
+        <?php endif; echo '</div>'; ?>
 
-    <?php endif; echo '</div>'; ?>
+<?php
 
-<?php the_field('home_description');  ?>
+    echo '<div class="row afc-home">';
 
-<?php the_field('home_divider'); ?>
+    echo '<div class="col-xs-6 col-md-12 afc-description-header">';
+        echo '<p>';
+            the_field('home_description_header');
+        echo '</p>';
+    echo '</div>';
+
+    echo '<div class="col-xs-6 col-md-12 col-md-offset-4 afc-description">';
+        echo '<p>';
+            the_field('home_description');
+        echo '</p>';
+    echo '</div>';
+
+    echo '</div>';
+?>
+
+<?php
+
+echo '<div class="afc-divider">';
+    the_field('home_divider');
+echo '</div>';
+?>
 
 <?php
 echo '<div class="afc-repeater">';
 echo '<div class="row">';
 
-//$frontpage_post_object_left = get_posts('cat=11');
-//$frontpage_post_object_middle = get_posts('cat=9');
-//$frontpage_post_object_right = get_posts('cat=10');
+$post_objects = get_posts( 'home_post_objects' );
 
-$post_object = get_field( 'frontpage_post_left', 'category_11' );
+$counter = 0;
 
-if ($post_object) {
-    echo $post_object;
-} else {
-    echo "empty";
-}
+if ( $post_objects ): ?>
 
-//echo '<pre>';
-//print_r( $post_object );
-//echo '</pre>';
+        <?php foreach( $post_objects as $post ): ?>
+        <?php setup_postdata($post); ?>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-lg-offset-1">
+            <?php the_content(); if ( $counter == 2 ) { break; }; ?>
+        </div>
+        <?php $counter++; endforeach; ?>
+    <?php wp_reset_postdata(); endif; ?>
 
-
+<?php
 echo '</div>';
 echo '</div>';
-
 ?>
 
 <?php get_footer(); ?>

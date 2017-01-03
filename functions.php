@@ -24,10 +24,16 @@ function kassavirtanen_style_script() {
         $kassavirtanen_version
     );
 
+    // Enqueue bootstrap
+    wp_enqueue_style( 'bootstrap',
+        get_stylesheet_directory_uri() . '/assets/stylesheet/bootstrap.min.css',
+        array( $child_style )
+    );
+
     // Enqueue child theme main stylesheet
     wp_enqueue_style( 'twentysixteen-main',
         get_stylesheet_directory_uri() . '/assets/stylesheet/main.css',
-        array( $child_style ),
+        array( 'bootstrap' ),
         $kassavirtanen_version
     );
 }
@@ -51,15 +57,7 @@ function load_fonts() {
     wp_enqueue_style( 'et-googleFonts' );
 }
 
-function bootstrap_style_script() {
-
-    wp_enqueue_style( 'bootstrap',
-        get_stylesheet_directory_uri() . '/assets/stylesheet/bootstrap.min.css'
-    );
-}
-
 add_action( 'wp_print_styles', 'load_fonts' );
-add_action( 'wp_enqueue_scripts', 'bootstrap_style_script' );
 add_action( 'wp_enqueue_scripts', 'kassavirtanen_style_script' );
 add_action( 'wp_enqueue_scripts', 'cashflow_react_script' );
 

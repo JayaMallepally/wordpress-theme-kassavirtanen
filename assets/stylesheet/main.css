@@ -20,6 +20,12 @@ body, button, input, select, textarea {
   .site-info p {
     margin: 0 auto; }
 
+.afc-home {
+  margin: 10px 200px; }
+  @media screen and (max-width: 56.875em) {
+    .afc-home {
+      margin: 0 10px; } }
+
 .afc-image {
   overflow: hidden;
   max-height: 280px;
@@ -28,9 +34,10 @@ body, button, input, select, textarea {
 .afc-description {
   margin: 0 auto;
   text-align: center; }
-
-.afc-description {
-  margin: 0 250px; }
+  .afc-description-header {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600; }
 
 .afc-divider {
   background-color: #44c0cc;
@@ -45,6 +52,11 @@ body, button, input, select, textarea {
     padding: 0 25px;
     margin-left: 50px;
     border: solid 1px #ffffff; }
+  .afc-divider a:hover {
+    text-decoration: none;
+    color: #ffffff; }
+  .afc-divider a {
+    color: #ffffff; }
 
 .afc-repeater {
   margin: 0 100px; }
@@ -56,8 +68,20 @@ body, button, input, select, textarea {
   font-family: "Open Sans"; }
   .main-navigation li:first-child {
     width: 100px; }
+    @media screen and (max-width: 56.875em) {
+      .main-navigation li:first-child {
+        width: 100%; } }
   .main-navigation li:nth-child(2) {
     width: 120px; }
+    @media screen and (max-width: 56.875em) {
+      .main-navigation li:nth-child(2) {
+        width: 100%; } }
+
+.menu-toggle {
+  font-size: 13px; }
+  @media screen and (min-width: 44.375em) {
+    .menu-toggle {
+      font-size: 16px; } }
 
 .header-image img {
   width: 100%; }
@@ -65,4 +89,7 @@ body, button, input, select, textarea {
 #mainNaviButton {
   text-transform: none;
   font-family: "Open Sans";
+  font-weight: 600; }
+
+#loginButton {
   font-weight: 600; }

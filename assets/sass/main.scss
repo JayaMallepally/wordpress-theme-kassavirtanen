@@ -45,6 +45,14 @@ body, button, input, select, textarea {
 
 .afc {
 
+  &-home {
+    margin: 10px 200px;
+
+    @media screen and (max-width: 56.875em) {
+      margin: 0 10px;
+    }
+  }
+
   &-image {
     overflow: hidden;
     max-height: 280px;
@@ -54,10 +62,12 @@ body, button, input, select, textarea {
   &-description {
     margin: $margin-auto;
     text-align: center;
-  }
 
-  &-description {
-    margin: 0 250px;
+    &-header {
+      margin: $margin-auto;
+      text-align: center;
+      font-weight: 600;
+    }
 
   }
 
@@ -80,6 +90,16 @@ body, button, input, select, textarea {
       margin-left: 50px;
       border: solid 1px $white-color;
     }
+
+    a:hover {
+      text-decoration: none;
+      color: $white-color;
+    }
+
+    a {
+      color: $white-color;
+    }
+
   }
 
   &-repeater {
@@ -99,15 +119,40 @@ body, button, input, select, textarea {
 .main {
 
   &-navigation {
+
     font-family: $main-default-font;
 
     li:first-child {
+
+      @media screen and (max-width: 56.875em) {
+        width: 100%;
+      }
+
       width: 100px;
     }
 
     li:nth-child(2) {
+
+      @media screen and (max-width: 56.875em) {
+        width: 100%;
+      }
+
       width: 120px;
     }
+
+  }
+}
+
+.menu {
+
+  &-toggle {
+
+    @media screen and (min-width: 44.375em) {
+      font-size: 16px;
+    }
+
+    font-size: 13px;
+
   }
 }
 
@@ -125,5 +170,9 @@ body, button, input, select, textarea {
 #mainNaviButton {
   text-transform: none;
   font-family: $main-default-font;
+  font-weight: 600;
+}
+
+#loginButton {
   font-weight: 600;
 }

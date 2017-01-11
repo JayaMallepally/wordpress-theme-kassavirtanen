@@ -29,13 +29,13 @@ get_header(); ?>
 
     echo '<div class="row afc-home">';
 
-    echo '<div class="col-xs-6 col-md-12 afc-description-header">';
+    echo '<div class="col-xs-12 col-md-12 afc-description-header">';
         echo '<p>';
             the_field('home_description_header');
         echo '</p>';
     echo '</div>';
 
-    echo '<div class="col-xs-6 col-md-12 col-md-offset-4 afc-description">';
+    echo '<div class="col-xs-12 col-md-12 col-md-offset-4 afc-description">';
         echo '<p>';
             the_field('home_description');
         echo '</p>';

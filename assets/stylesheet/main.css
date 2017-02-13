@@ -18,7 +18,13 @@ body, button, input, select, textarea {
     background-color: #44c0cc;
     padding-top: 50px; }
   .site-info p {
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 12px;
+    color: white; }
+  .site-info a {
+    color: white; }
+  .site-info-title {
+    font-weight: bold; }
 
 .afc-home {
   margin: 10px 200px; }

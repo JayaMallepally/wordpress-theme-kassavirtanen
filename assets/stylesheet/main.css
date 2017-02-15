@@ -98,13 +98,28 @@ body, button, input, select, textarea {
 .header-image img {
   width: 100%; }
 
-.hinnasto .hinnasto-panel {
-  width: 33%;
-  display: inline-block; }
-  @media screen and (max-width: 56.875em) {
-    .hinnasto .hinnasto-panel {
-      width: 100%;
-      padding: 0 20px; } }
+.hinnasto {
+  color: white; }
+  .hinnasto .panel {
+    background-color: #44c0cc;
+    border-radius: 0;
+    height: 450px;
+    margin-bottom: 40px; }
+    .hinnasto .panel h1 {
+      text-align: center;
+      border-bottom: 4px solid white;
+      padding: 5px 0 15px 0; }
+    .hinnasto .panel h2 {
+      text-transform: uppercase;
+      font-size: 1.5em;
+      border-bottom: 4px solid white;
+      text-align: center;
+      padding: 5px 0;
+      padding: 0 40px 15px 40px; }
+    .hinnasto .panel ul {
+      padding-left: 15px; }
+    .hinnasto .panel li {
+      padding: 5px 25px 5px 0; }
 
 #mainNaviButton {
   text-transform: none;

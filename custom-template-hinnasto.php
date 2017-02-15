@@ -27,7 +27,7 @@ if ( !empty($image) ):
 
 <?php
 
-echo '<div class="container">';
+echo '<div class="container hinnasto">';
 echo '<div class="row">';
 
 echo '<div class= "col-md-4 hinnasto-panel afc-free-registration">';

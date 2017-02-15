@@ -98,6 +98,14 @@ body, button, input, select, textarea {
 .header-image img {
   width: 100%; }
 
+.hinnasto .hinnasto-panel {
+  width: 33%;
+  display: inline-block; }
+  @media screen and (max-width: 56.875em) {
+    .hinnasto .hinnasto-panel {
+      width: 100%;
+      padding: 0 20px; } }
+
 #mainNaviButton {
   text-transform: none;
   font-family: "Open Sans";

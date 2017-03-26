@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf assets/stylesheet/main.css; rimraf assets/sass-dummy.js",
     "predist": "rimraf assets/stylesheet/main.css; rimraf assets/sass-dummy.js",
-    "dist": "webpack --progress --colors",
+    "dist": "webpack --colors",
     "dev": "webpack --progress --colors --watch",
     "test": "test"
   },

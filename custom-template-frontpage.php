@@ -14,7 +14,14 @@ get_header(); ?>
 
 
 <?php
-echo '<div class="afc-jetpack_div">';
+$img = get_field('top_image');
+$img = $img['url'];
+
+$style = 'background-image: url(' . $img . ')';
+
+echo '<div style="' . $style . '" class="afc-jetpack_div">';
+
+//echo "<div style=" . $style . ">";
 
     echo '<p>';
     the_field('image_text');

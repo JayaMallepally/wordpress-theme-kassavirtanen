@@ -13,7 +13,7 @@
 		</div><!-- .site-content -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-
+<?php /*  */ ?>
 
 			<div class="footer-info">
                 <div class="row">
@@ -27,28 +27,18 @@
                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <p class="footer-info-title">Navigointi</p>
                         <p><a href="#">Etusivu</a></p>
-                        <p><a href="#">Kenelle palvelu sopii?</a></p>
-                        <p><a href="#">Usein kysyttyä</a></p>
-                        <p><a href="#">Toimeksiantajalle</a></p>
+                        <p><a href="#">Hinnasto</a></p>
+                        <p><a href="#">Usein kysytyt kysymykset</a></p>
+                        <p><a href="#">Sopii yrityksille ja yksityishenkilöille</a></p>
                         <p><a href="#">Yhteystiedot</a></p>
-                        <p><a href="#">Palkkalaskuri</a></p>
-                        <p><a href="#">In english</a></p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                        <p class="footer-info-title">Tietoja palvelusta</p>
-                        <p><a href="#">Blogi</a></p>
-                        <p><a href="#">Yhteistyökumppanit</a></p>
-                        <p><a href="#">Medialle</a></p>
-                        <p><a href="#">Rekisteriseloste</a></p>
-                        <p><a href="#">Tietoa evästeistä</a></p>
-                        <p><a href="#">Artikkelipankki</a></p>
-                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"></div>
+
                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <p class="footer-info-title">Asiakaspalvelu</p>
                         <p>Puh. 09 0000 000</p>
                         <p><a href="mailto:asiakaspalvelu@kassavirtanen.fi" target="_blank">asiakaspalvelu@kassavirtanen.fi</a></p>
-                        <p><a href="#">Lähetä viesti yhteydenottolomakkeella</a></p>
-                        <p><a href="#">Ohjeet verokortin toimitukseen</a></p>
                     </div>
                 </div>
 
@@ -67,7 +57,8 @@
      				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a>
                 */?>
 
-                <div class="row">
+                <div class="afc-copyright">
+                    <img src="http://kassavirtanen.local/wp-content/uploads/2017/03/someplaceholder.png" alt="This must be replaced. Doesnt work" class="someplaceholderremove"><br><br>
                     <p>© kassavirtanen 2016</p>
                 </div>
 

@@ -5,6 +5,8 @@ body, button, input, select, textarea {
   font-family: $main-default-font;
 }
 
+
+
 .site {
 
   margin: $margin-auto;
@@ -25,7 +27,8 @@ body, button, input, select, textarea {
     padding: 0;
 
     &-main {
-      padding: 0 50px 0 50px;
+      padding: 0 50px 0 40px;
+
     }
   }
 
@@ -37,11 +40,14 @@ body, button, input, select, textarea {
   &-info {
 
   }
+
 }
 
 .footer {
 
   &-info {
+    text-align: left;
+
     p {
       margin: $margin-auto;
       font-size: 12px;
@@ -82,11 +88,20 @@ body, button, input, select, textarea {
   &-description {
     margin: $margin-auto;
     text-align: center;
+    padding: 20px 20% 60px 20%;
+
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: center;
+
+    }
 
     &-header {
       margin: $margin-auto;
       text-align: center;
       font-weight: 600;
+      padding-top: 20px;
     }
 
   }
@@ -121,10 +136,44 @@ body, button, input, select, textarea {
     }
 
   }
+//Rekisteröityminen. Input fieldeissä prosentit. Placeholderien skaalautuvuuden voisi tarkistaa.
+  &-register {
+
+    background-color: $main-layout-color;
+    margin-bottom: 25px;
+    color: $white-color;
+
+    padding: 40px 0;
+
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    span {
+      padding: 0 25px;
+      margin-left: 50px;
+      border: solid 1px $white-color;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $white-color;
+    }
+
+    a {
+      color: $white-color;
+    }
+
+  }
 
   &-repeater {
 
+    text-align: center;
     margin: 0 100px;
+    padding-bottom: 60px;
+    padding-top: 20px;
 
     &-post {
 
@@ -134,6 +183,100 @@ body, button, input, select, textarea {
       }
     }
   }
+//Pikapalkka osio. Paddingit vasen ja oikea prosentteina. Otsikon asettelu paremmaksi.
+  &-salary {
+
+    background-color: $main-layout-color;
+    margin-bottom: 25px;
+    color: $white-color;
+
+    padding: 40px 20% 60px 20%;
+
+
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    span {
+      padding: 0 25px;
+      margin-left: 50px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $white-color;
+    }
+
+    a {
+      color: $white-color;
+    }
+  }
+//Navien keskitys keskelle.
+  &-copyright {
+
+    background-color: $main-layout-color;
+    margin-bottom: 25px;
+    color: $white-color;
+
+    padding: 60px 0px 60px 0px;
+
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    span {
+      padding: 0 25px;
+      margin-left: 50px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $white-color;
+    }
+
+    a {
+      color: $white-color;
+    }
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+
+//Topimagen muutto divin taustakuvaksi. Teksti päällä. Height tulisi säätää jotenkin paremmin, että loppukäyttäjä voisi vaihtaa tekstiä dynaamisesti. Skaalautuvuus.
+  &-jetpack_div {
+    background-image: url("http://kassavirtanen.local/wp-content/uploads/2016/12/kassavirtanen_header.png");
+    max-width: 100%;
+    min-width: 90%;
+    width: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    word-wrap: break-word;
+
+
+    p {
+      font-family: $main-default-font;
+      font-weight: bold;
+      font-size: 1.8em;
+      color: $white-color;
+      text-shadow: 1px 0px #7D7979;
+      padding-top: 6%;
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: center;
+
+    }
+
+  }
+
+
 }
 
 .main {
@@ -181,12 +324,12 @@ body, button, input, select, textarea {
   &-image {
 
     img {
-      width: 100%;
+      width: 10%;
     }
 
   }
 }
-
+//Hinnaston nimen voisi vaihtaa. Paddingit prosentteina taas.
 .hinnasto {
 	color: white;
 	.panel {
@@ -223,10 +366,44 @@ body, button, input, select, textarea {
 	}
 }
 
+//placeholderin asettelu
+::-webkit-input-placeholder {
+  color: $white-color !important;
+  font-size: 1em !important;
+}
+
+//rekisteröitymisen inputfieldien asettelut
+.register-input {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 20px;
+  max-width: 15%;
+  height: 35px !important;
+  text-align: center;
+  background-color: $main-layout-color !important;
+  border-color: $white-color !important;
+
+}
+
+//rekisteröitymisbuttoni
+.register-button {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 150px !important;
+  height: 40px !important;
+  text-align: center;
+  background-color: $background-color !important;
+  color: $main-layout-color !important;
+}
+
+//Näitä pitää säätää, että tekstin pituus ei vaikuttaisi napin toimivuuteen.
 #mainNaviButton {
-  text-transform: none;
+  display: inline-block;
   font-family: $main-default-font;
   font-weight: 600;
+
+
 }
 
 #loginButton {

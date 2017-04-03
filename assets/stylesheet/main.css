@@ -163,8 +163,13 @@ body, button, input, select, textarea {
     margin-bottom: 10px;
     text-align: center; }
 
-.main-navigation {
-  font-family: "Open Sans"; }
+.main-navigation a {
+  font-family: "Open Sans";
+  color: #00b3ee;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+}
   .main-navigation li:first-child {
     width: 100px; }
     @media screen and (max-width: 56.875em) {

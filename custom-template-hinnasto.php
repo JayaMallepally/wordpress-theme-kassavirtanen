@@ -12,18 +12,21 @@ get_header(); ?>
 
 
 <?php
+$img = get_field('top_image');
+$img = $img['url'];
 
-echo '<div class="home-image">';
+$style = 'background-image: url(' . $img . ')';
 
-$image = get_field('top_image');
-if ( !empty($image) ):
+echo '<div style="' . $style . '" class="afc-jetpack_div">';
 
-    // vars
-    $url = $image['url'];
-    $alt = $image['alt'];
-    ?>
-    <img src="<?php echo $url ?>" alt="<?php echo $alt ?>" />
-<?php endif; echo '</div>'; ?>
+
+echo '<p>';
+the_field('image_text');
+echo '</p>';
+
+echo '</div>';
+
+?>
 
 <?php
 

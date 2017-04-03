@@ -21,7 +21,6 @@ $style = 'background-image: url(' . $img . ')';
 
 echo '<div style="' . $style . '" class="afc-jetpack_div">';
 
-//echo "<div style=" . $style . ">";
 
     echo '<p>';
     the_field('image_text');

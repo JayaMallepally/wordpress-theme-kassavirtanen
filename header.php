@@ -13,8 +13,16 @@
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <!--NÄMÄ LISÄSIN ACCORDIONIA VARTEN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--IKONIT-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
@@ -26,7 +34,16 @@
 <div id="page" class="site">
 
 	<div class="site-inner">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
+
+        <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
+
+        <div class="login-panel">
+            <div class="pull-right login-panel-buttons">
+                <a href="">
+                    <i class="fa fa-lock fa-fw"></i> Kirjaudu sisään
+                </a>
+            </div>
+        </div>
 
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-main">

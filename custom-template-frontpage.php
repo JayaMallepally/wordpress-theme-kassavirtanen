@@ -19,7 +19,7 @@ $img = $img['url'];
 
 $style = 'background-image: url(' . $img . ')';
 
-echo '<div style="' . $style . '" class="afc-jetpack_div">';
+echo '<div style="' . $style . '" class="afc-jetpack_div is-extra-responsive">';
 
 
     echo '<p>';
@@ -30,80 +30,82 @@ echo '</div>';
 
 ?>
 
-<?php
-echo '<div class="row afc-home">';
 
-echo '<div class="col-xs-12 col-md-12 afc-description-header">';
-echo '<p>';
-the_field('home_description_header');
-echo '</p>';
-echo '</div>';
+<div class="contentblock">
+    <div class="title">
+        <?php the_field('column1_name'); ?>
+    </div>
+    <div class="content">
+        <?php the_field('column1_text'); ?>
+    </div>
+</div>
 
-echo '<div class="col-xs-12 col-md-12 col-md-offset-4 afc-description">';
-echo '<p>';
-the_field('home_description');
-echo '</p>';
-echo '</div>';
+<div class="contentblock is-colored is-paddingless">
+    <div class="title is-marginless">
+        <?php the_field('column2_name'); ?>
+    </div>
+    <div class="content">
+        <?php the_field('column2_text'); ?>
+        <form class="form-inline">
+            <div class="form-group">
+                <input class="register-input form-control" type="text" placeholder="ETUNIMI"/>
+            </div>
+            <div class="form-group">
+                <input class="register-input form-control" type="text" placeholder="SUKUNIMI"/>
+            </div>
+            <div class="form-group">
+                <input class="register-input form-control" type="text" placeholder="SÄHKÖPOSTI"/>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="register-button">LIITY NYT</button>
+            </div>
+        </form>
+    </div>
+</div>
 
-echo '</div>';
-?>
-
-<?php
-
-echo '<div class="afc-register">';
-the_field('register');
-echo '</div>';
-?>
-
-<?php
-echo '<div class="afc-repeater">';
-echo '<div class="row">';
-echo '<div class="col-lg-3"> </div>';
-$post_objects = get_posts('home_post_objects');
-
-$counter = 0;
-
-if ($post_objects): ?>
-
-    <?php foreach ($post_objects as $post): ?>
-        <?php setup_postdata($post); ?>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 ">
-            <?php the_content();
-            if ($counter == 1) {
-                break;
-            }; ?>
+<div class="contentblock">
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-6">
+                <?php
+                $block1_image = get_field('column3_block1_image');
+                $block1_name = get_field('column3_block1_name');
+                $block1_text = get_field('column3_block1_text');
+                echo '<p><img src="'.$block1_image["url"].'" alt="'.$block1_image["alt"].'" class="alignnone size-medium"></p>';
+                echo '<p><b>'.$block1_name.'</b></p>';
+                echo '<p>'.$block1_text.'</p>';
+                ?>
+            </div>
+            <div class="col-md-6">
+                <?php
+                $block2_image = get_field('column3_block2_image');
+                $block2_name = get_field('column3_block2_name');
+                $block2_text = get_field('column3_block2_text');
+                echo '<p><img src="'.$block2_image["url"].'" alt="'.$block2_image["alt"].'" class="alignnone size-medium"></p>';
+                echo '<p><b>'.$block2_name.'</b></p>';
+                echo '<p>'.$block2_text.'</p>';
+                ?>
+            </div>
         </div>
-        <?php $counter++; endforeach; ?>
-    <?php wp_reset_postdata(); endif; ?>
+    </div>
+</div>
 
+<div class="contentblock is-colored">
+    <div class="title">
+        <?php the_field('column4_name'); ?>
+    </div>
+    <div class="content">
+        <?php the_field('column4_text'); ?>
+    </div>
+</div>
 
-<?php
-echo '<div class="col-lg-3"></div>';
-echo '</div>';
-echo '</div>';
-echo '</div>';
-?>
-
-<?php
-
-echo '<div class="afc-salary">';
-the_field('salary');
-echo '</div>';
-?>
-
-<?php
-
-echo '<div class="col-xs-12 col-md-12 afc-description-header">';
-    echo '<p>';
-        the_field('description_bottom_desc');
-    echo '</p>';
-echo '</div>';
-
-echo '<div class="col-xs-12 col-md-12 col-md-offset-4 afc-description">';
-    echo '<p>';
-        the_field('description');
-    echo '</p>';
-echo '</div>';
-?>
+<div class="contentblock">
+    <div class="title">
+        <?php the_field('column5_name'); ?>
+    </div>
+    <div class="content">
+        <?php the_field('column5_text'); ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>

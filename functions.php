@@ -38,10 +38,17 @@ function kassavirtanen_style_script() {
     );
 }
 
-function cashflow_react_script() {
+function kassavirtanen_scripts() {
 
     wp_enqueue_script( 'cashflow-react',
         get_stylesheet_directory_uri() . '/scripts/app.js',
+        array(),
+        null,
+        true
+    );
+
+    wp_enqueue_script( 'collapsepanel',
+        get_stylesheet_directory_uri() . '/scripts/collapsepanel.js',
         array(),
         null,
         true
@@ -59,6 +66,6 @@ function load_fonts() {
 
 add_action( 'wp_print_styles', 'load_fonts' );
 add_action( 'wp_enqueue_scripts', 'kassavirtanen_style_script' );
-add_action( 'wp_enqueue_scripts', 'cashflow_react_script' );
+add_action( 'wp_enqueue_scripts', 'kassavirtanen_scripts' );
 
 ?>

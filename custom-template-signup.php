@@ -22,7 +22,7 @@
 
 <body>
 
-<!--div id="app"></div-->
+<div id="app"></div>
 
 <?php wp_footer(); ?>
 </body>

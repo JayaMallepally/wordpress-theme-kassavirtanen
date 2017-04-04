@@ -33,8 +33,7 @@ function kassavirtanen_style_script() {
     // Enqueue child theme main stylesheet
     wp_enqueue_style( 'twentysixteen-main',
         get_stylesheet_directory_uri() . '/assets/stylesheet/main.css',
-        array( 'bootstrap' ),
-        $kassavirtanen_version
+        array( 'bootstrap' )
     );
 }
 

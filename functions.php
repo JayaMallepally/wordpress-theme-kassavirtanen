@@ -46,6 +46,7 @@ function kassavirtanen_scripts() {
         true
     );
 
+
     wp_enqueue_script( 'collapsepanel',
         get_stylesheet_directory_uri() . '/scripts/collapsepanel.js',
         array(),

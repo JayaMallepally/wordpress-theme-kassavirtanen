@@ -1,23 +1,40 @@
-body, button, input, select, textarea {
-  font-family: "Open Sans"; }
+.button {
+  margin: 0 !important;
+  height: 40px !important;
+  width: 150px !important;
+  text-align: center;
+  background-color: #ffffff !important;
+  color: #44c0cc !important; }
+  .button-nav {
+    display: inline-block;
+    font-family: "Open Sans";
+    font-weight: 600; }
+  .button-login {
+    font-weight: 600; }
 
-.site {
-  position: relative;
-  margin: 0 auto;
-  padding: 0; }
-  .site-content {
-    padding: 0; }
-  .site-inner {
-    max-width: 4096px;
-    margin: 0;
-    padding: 0; }
-  .site-header {
-    padding: 0; }
-    .site-header-main {
-      padding: 0 50px 0 40px; }
-  .site-footer {
-    background-color: #44c0cc;
-    padding-top: 50px; }
+.menu-toggle {
+  font-size: 13px; }
+  @media screen and (min-width: 44.375em) {
+    .menu-toggle {
+      font-size: 16px; } }
+
+.register-input {
+  height: 40px !important;
+  text-align: center;
+  background-color: #44c0cc !important;
+  border-color: #ffffff !important;
+  box-sizing: border-box;
+  margin-right: 30px !important; }
+  @media screen and (max-width: 1376px) {
+    .register-input {
+      margin-right: 10px !important; } }
+  @media screen and (max-width: 600px) {
+    .register-input {
+      margin-right: 0px !important; } }
+
+::-webkit-input-placeholder {
+  color: #ffffff !important;
+  font-size: 1em !important; }
 
 .login-panel {
   width: 100%;
@@ -43,194 +60,6 @@ body, button, input, select, textarea {
       .login-panel-buttons > a:hover {
         text-decoration: none; }
 
-.footer-info {
-  text-align: left; }
-  .footer-info p {
-    margin: 0 auto;
-    font-size: 12px;
-    color: #ffffff; }
-  .footer-info a {
-    color: white; }
-    .footer-info a:hover {
-      color: #000000;
-      text-decoration: none; }
-  .footer-info-title {
-    font-weight: bold; }
-
-.contentblock {
-  padding: 50px 0px 50px 0px;
-  text-align: center; }
-  .contentblock.is-colored {
-    background-color: #44c0cc;
-    color: white; }
-  .contentblock.is-paddingless > * {
-    padding: 0 !important; }
-    @media screen and (max-width: 800px) {
-      .contentblock.is-paddingless > * {
-        padding: 0 20px 0 20px !important; } }
-    @media screen and (min-width: 771px) and (max-width: 779px) {
-      .contentblock.is-paddingless > * button {
-        margin-top: 15px !important; } }
-  .contentblock > * {
-    max-width: 1200px; }
-    @media screen and (max-width: 1200px) {
-      .contentblock > * {
-        padding: 0 100px 0 100px !important; } }
-    @media screen and (max-width: 600px) {
-      .contentblock > * {
-        padding: 0 20px 0 20px !important; } }
-  .contentblock .title {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: auto auto;
-    margin-bottom: 15px; }
-    .contentblock .title.is-marginless {
-      margin-bottom: 0px; }
-  .contentblock .content {
-    padding: 0px;
-    margin: auto auto; }
-
-.afc-home {
-  margin: 10px 200px; }
-  @media screen and (max-width: 56.875em) {
-    .afc-home {
-      margin: 0 10px; } }
-
-.afc-image {
-  text-align: center;
-  max-width: 100%;
-  margin-bottom: 25px; }
-
-.afc-description {
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px 20% 60px 20%; }
-  .afc-description p {
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center; }
-  .afc-description-header {
-    margin: 0 auto;
-    margin-top: 40px;
-    text-align: center;
-    font-weight: 600;
-    padding-top: 20px; }
-  .afc-description-title {
-    text-transform: uppercase; }
-
-.afc-divider {
-  background-color: #44c0cc;
-  margin-bottom: 25px;
-  color: #ffffff;
-  padding: 10px 0; }
-  .afc-divider p {
-    margin: 0;
-    font-weight: 600;
-    text-align: center; }
-  .afc-divider span {
-    padding: 0 25px;
-    margin-left: 50px;
-    border: solid 1px #ffffff; }
-  .afc-divider a:hover {
-    text-decoration: none;
-    color: #ffffff; }
-  .afc-divider a {
-    color: #ffffff; }
-
-.afc-register {
-  background-color: #44c0cc;
-  margin-bottom: 25px;
-  color: #ffffff;
-  padding: 40px 0; }
-  .afc-register p {
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center; }
-  .afc-register span {
-    padding: 0 25px;
-    margin-left: 50px;
-    border: solid 1px #ffffff; }
-  .afc-register a:hover {
-    text-decoration: none;
-    color: #ffffff; }
-  .afc-register a {
-    color: #ffffff; }
-
-.afc-repeater {
-  text-align: center;
-  margin: 0 100px;
-  padding-bottom: 60px;
-  padding-top: 20px; }
-  .afc-repeater-post img {
-    width: 25%;
-    height: auto; }
-
-.afc-salary {
-  background-color: #44c0cc;
-  margin-bottom: 25px;
-  color: #ffffff;
-  padding: 40px 20% 60px 20%; }
-  .afc-salary p {
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center; }
-  .afc-salary span {
-    padding: 0 25px;
-    margin-left: 50px; }
-  .afc-salary a:hover {
-    text-decoration: none;
-    color: #ffffff; }
-  .afc-salary a {
-    color: #ffffff; }
-
-.afc-copyright {
-  color: #ffffff;
-  width: 100%;
-  text-align: center;
-  margin-top: 40px; }
-  .afc-copyright p {
-    margin: 0;
-    margin-bottom: 10px; }
-
-.afc-jetpack_div {
-  background-image: url("http://kassavirtanen.local/wp-content/uploads/2016/12/kassavirtanen_header.png");
-  max-width: 100%;
-  min-width: 90%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  word-wrap: break-word; }
-  @media screen and (max-width: 600px) {
-    .afc-jetpack_div.is-extra-responsive {
-      background-position-x: -160px; } }
-  @media screen and (max-width: 330px) {
-    .afc-jetpack_div.is-extra-responsive {
-      background-position-x: -500px; } }
-  .afc-jetpack_div p {
-    font-family: "Open Sans";
-    font-weight: bold;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-shadow: 1px 0px #7D7979;
-    padding-top: 6%;
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center; }
-
-.someicons {
-  color: white;
-  margin: auto;
-  margin-top: 60px; }
-  .someicons .container {
-    max-width: 200px; }
-  .someicons a {
-    font-size: 2em;
-    color: white; }
-    .someicons a:hover {
-      text-decoration: none;
-      color: white; }
-
 .separated-panel {
   background-color: #44c0cc;
   min-height: 460px;
@@ -239,6 +68,7 @@ body, button, input, select, textarea {
   display: block;
   overflow: hidden;
   text-align: center;
+  color: white;
   margin: 20px 0 20px 0; }
   .separated-panel.is-taller {
     min-height: 510px; }
@@ -277,6 +107,39 @@ body, button, input, select, textarea {
     .separated-panel .content > *:last-child {
       margin-bottom: 0; }
 
+.contentblock {
+  padding: 50px 0px 50px 0px;
+  text-align: center; }
+  .contentblock.is-colored {
+    background-color: #44c0cc;
+    color: white; }
+  .contentblock.is-paddingless > * {
+    padding: 0 !important; }
+    @media screen and (max-width: 800px) {
+      .contentblock.is-paddingless > * {
+        padding: 0 20px 0 20px !important; } }
+    @media screen and (min-width: 771px) and (max-width: 779px) {
+      .contentblock.is-paddingless > * button {
+        margin-top: 15px !important; } }
+  .contentblock > * {
+    max-width: 1200px; }
+    @media screen and (max-width: 1200px) {
+      .contentblock > * {
+        padding: 0 100px 0 100px !important; } }
+    @media screen and (max-width: 600px) {
+      .contentblock > * {
+        padding: 0 20px 0 20px !important; } }
+  .contentblock .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: auto auto;
+    margin-bottom: 15px; }
+    .contentblock .title.is-marginless {
+      margin-bottom: 0px; }
+  .contentblock .content {
+    padding: 0px;
+    margin: auto auto; }
+
 .main-navigation {
   font-family: "Open Sans"; }
   .main-navigation li:first-child {
@@ -293,24 +156,126 @@ body, button, input, select, textarea {
     text-transform: uppercase;
     font-weight: bold;
     color: #44c0cc; }
-  .main-navigation a:hover {
-    text-decoration: none; }
+    .main-navigation a:hover {
+      text-decoration: none; }
 
-.menu-toggle {
-  font-size: 13px; }
-  @media screen and (min-width: 44.375em) {
-    .menu-toggle {
-      font-size: 16px; } }
-
-.header-image img {
-  width: 10%; }
-
-.ukk .greyh1 {
+.largetitle {
   color: #7D7979;
   border-bottom: 1px solid #44c0cc;
   padding: 5px 0 15px 0;
   font-weight: 600;
   text-transform: uppercase; }
+
+.faqpanels {
+  margin: 15px 0 0 0; }
+  .faqpanels .collapsepanel {
+    border: 1px solid #44c0cc;
+    margin-bottom: 20px; }
+    .faqpanels .collapsepanel:last-child {
+      margin-bottom: 0px; }
+    .faqpanels .collapsepanel.is-open .title > .icon > i::before {
+      content: "\F068"; }
+    .faqpanels .collapsepanel.is-open .content {
+      display: block; }
+    .faqpanels .collapsepanel .title {
+      background-color: #44c0cc;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      padding: 20px 25px 20px 25px; }
+      .faqpanels .collapsepanel .title .icon {
+        float: right; }
+        .faqpanels .collapsepanel .title .icon i::before {
+          content: "\F067"; }
+    .faqpanels .collapsepanel .content {
+      padding: 20px 25px 20px 25px;
+      padding-right: 50px;
+      display: none; }
+
+.header-block {
+  background-image: url("http://kassavirtanen.local/wp-content/uploads/2016/12/kassavirtanen_header.png");
+  max-width: 100%;
+  min-width: 90%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  word-wrap: break-word; }
+  @media screen and (max-width: 600px) {
+    .header-block.is-extra-responsive {
+      background-position-x: -160px; } }
+  @media screen and (max-width: 330px) {
+    .header-block.is-extra-responsive {
+      background-position-x: -500px; } }
+  .header-block p {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 1px 0px #7D7979;
+    padding-top: 6%;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center; }
+
+.header-image img {
+  width: 10%; }
+
+.footer {
+  background-color: #44c0cc;
+  padding-top: 50px;
+  margin-top: 50px; }
+  .footer-info {
+    text-align: left; }
+    .footer-info p {
+      margin: 0 auto;
+      font-size: 12px;
+      color: #ffffff; }
+    .footer-info a {
+      color: white; }
+      .footer-info a:hover {
+        color: #000000;
+        text-decoration: none; }
+    .footer-info-title {
+      font-weight: bold; }
+  .footer-copyright {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px; }
+    .footer-copyright p {
+      margin: 0;
+      margin-bottom: 10px; }
+  .footer-icons {
+    color: white;
+    margin: auto;
+    margin-top: 60px; }
+    .footer-icons .container {
+      max-width: 200px; }
+    .footer-icons a {
+      font-size: 2em;
+      color: white; }
+      .footer-icons a:hover {
+        text-decoration: none;
+        color: white; }
+
+body, button, input, select, textarea {
+  font-family: "Open Sans"; }
+
+.site {
+  position: relative;
+  margin: 0 auto;
+  padding: 0; }
+  .site-content {
+    padding: 0; }
+  .site-inner {
+    max-width: 4096px;
+    margin: 0;
+    padding: 0; }
+  .site-header {
+    padding: 0; }
+    .site-header-main {
+      padding: 0 50px 0 40px; }
 
 .kassavirtanenbrand {
   font-family: sans-serif;
@@ -319,149 +284,5 @@ body, button, input, select, textarea {
   font-weight: bold;
   margin-top: 0; }
 
-.faqpanels .collapsepanel {
-  border: 1px solid #44c0cc;
-  margin-bottom: 20px; }
-  .faqpanels .collapsepanel:last-child {
-    margin-bottom: 0px; }
-  .faqpanels .collapsepanel.is-open .title > .icon > i::before {
-    content: "\F068"; }
-  .faqpanels .collapsepanel.is-open .content {
-    display: block; }
-  .faqpanels .collapsepanel .title {
-    background-color: #44c0cc;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    padding: 20px 25px 20px 25px; }
-    .faqpanels .collapsepanel .title .icon {
-      float: right; }
-      .faqpanels .collapsepanel .title .icon i::before {
-        content: "\F067"; }
-  .faqpanels .collapsepanel .content {
-    padding: 20px 25px 20px 25px;
-    padding-right: 50px;
-    display: none; }
-
 body:not(.custom-background-image):before, body:not(.custom-background-image):after {
   height: 0px; }
-
-.faq .panelquestion {
-  background-color: #44c0cc;
-  width: 100%;
-  display: inline-block;
-  height: 2.7em; }
-
-.faq .panelquestiontext {
-  margin-left: 2%; }
-
-.faq .panelanswer {
-  background-color: none; }
-
-.faq .panelanswertext {
-  margin-left: 2%;
-  margin-right: 17%; }
-
-.faq .h4 {
-  color: white;
-  height: 1em; }
-
-.faq .p {
-  color: black; }
-
-.faq a {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white; }
-
-.faq a:hover {
-  text-decoration: none; }
-
-.faq a:active {
-  text-decoration: none; }
-
-.faq a:visited {
-  text-decoration: none; }
-
-.hinnasto {
-  color: white; }
-  .hinnasto .greyh1 {
-    color: #7D7979;
-    border-bottom: 2px solid #44c0cc;
-    padding: 5px 0 15px 0;
-    font-weight: 600;
-    text-transform: uppercase; }
-  .hinnasto .panel {
-    background-color: #44c0cc;
-    border-radius: 0;
-    height: 460px;
-    margin-bottom: 40px;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%; }
-    .hinnasto .panel h1 {
-      border-bottom: 4px solid white;
-      padding: 5px 0 15px 0;
-      color: #5e5e5e; }
-    .hinnasto .panel h2 {
-      text-transform: uppercase;
-      font-size: 1.5em; }
-    .hinnasto .panel ul {
-      margin: 0;
-      list-style: none; }
-    .hinnasto .panel li {
-      padding: 5px 50px 5px 50px;
-      list-style: none; }
-      .hinnasto .panel li::before {
-        content: '\2022';
-        padding-right: 3px; }
-  .hinnasto .lowpanel {
-    height: auto;
-    margin-bottom: 40px;
-    text-align: center;
-    word-wrap: auto; }
-    .hinnasto .lowpanel h2 {
-      border-bottom: 4px solid white;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 1.2em;
-      padding: 5px 0 0px 0;
-      color: #000000; }
-    .hinnasto .lowpanel p {
-      padding: 5px 0 15px 0;
-      color: #000000; }
-
-::-webkit-input-placeholder {
-  color: #ffffff !important;
-  font-size: 1em !important; }
-
-.register-input {
-  height: 40px !important;
-  text-align: center;
-  background-color: #44c0cc !important;
-  border-color: #ffffff !important;
-  box-sizing: border-box;
-  margin-right: 30px !important; }
-  @media screen and (max-width: 1376px) {
-    .register-input {
-      margin-right: 10px !important; } }
-  @media screen and (max-width: 600px) {
-    .register-input {
-      margin-right: 0px !important; } }
-
-.register-button {
-  margin: 0 !important;
-  height: 40px !important;
-  width: 150px !important;
-  text-align: center;
-  background-color: #ffffff !important;
-  color: #44c0cc !important; }
-
-#mainNaviButton {
-  display: inline-block;
-  font-family: "Open Sans";
-  font-weight: 600; }
-
-#loginButton {
-  font-weight: 600; }

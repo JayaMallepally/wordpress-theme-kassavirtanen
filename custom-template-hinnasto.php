@@ -17,7 +17,7 @@ $img = $img['url'];
 
 $style = 'background-image: url(' . $img . ')';
 
-echo '<div style="' . $style . '" class="afc-jetpack_div">';
+echo '<div style="' . $style . '" class="header-block">';
 
 
 echo '<p>';
@@ -35,17 +35,16 @@ echo '</div>';
 $img = get_field('piechart');
 $img = $img['url'];
 
-
-echo '<div class="container hinnasto">';
-
-echo '<div class="row">';
-
-echo '<div class="col-md-12"><h1 class="greyh1">HINNASTO</h1></div>';
-echo '<div class="col-md-12" style="height: 50px;"></div>';
-
-echo '<div class= "col-md-4 hinnasto-panel">';
-echo '<div class="separated-panel">';
-echo '<div class="title"><h2>';
+?>
+<div class="container hinnasto">
+    <div class="row">
+        <div class="col-md-12"><h1 class="largetitle">HINNASTO</h1></div>
+    </div>
+    <div class="row">
+        <div class= "col-md-4 hinnasto-panel">
+            <div class="separated-panel">
+                <div class="title"><h2>
+<?php
 the_field('column1_name');
 echo '</h2></div>';
 echo '<div class="content"><p>';

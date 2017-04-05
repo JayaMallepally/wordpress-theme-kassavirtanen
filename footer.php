@@ -1,19 +1,6 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
- */
-?>
-
 		</div><!-- .site-content -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
-<?php /*  */ ?>
+		<footer id="colophon" class="footer" role="contentinfo">
 
 			<div class="footer-info container">
                 <div class="row">
@@ -43,7 +30,7 @@
 
 
 
-                <div class="someicons">
+                <div class="footer-icons">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-3"><a href="#"><i class="fa fa-fw fa-facebook fa-3" aria-hidden="true"></i></a></div>
@@ -55,7 +42,7 @@
                 </div>
 
 
-                <div class="afc-copyright">
+                <div class="footer-copyright">
                     <p>© kassavirtanen 2016</p>
                 </div>
 

@@ -14,19 +14,17 @@ get_header(); ?>
 
 
 <?php
+// Large top image
 $img = get_field('top_image');
 $img = $img['url'];
 
 $style = 'background-image: url(' . $img . ')';
-
-echo '<div style="' . $style . '" class="afc-jetpack_div is-extra-responsive">';
-
-
-    echo '<p>';
-    the_field('image_text');
-    echo '</p>';
-
-echo '</div>';
+?>
+<div style="<?php echo $style; ?>" class="header-block is-extra-responsive">
+    <p>
+        <?php the_field('image_text'); ?>
+    </p>
+</div>
 
 ?>
 
@@ -57,7 +55,7 @@ echo '</div>';
                 <input class="register-input form-control" type="text" placeholder="SÄHKÖPOSTI"/>
             </div>
             <div class="form-group">
-                <button type="submit" class="register-button">LIITY NYT</button>
+                <button type="submit" class="button">LIITY NYT</button>
             </div>
         </form>
     </div>

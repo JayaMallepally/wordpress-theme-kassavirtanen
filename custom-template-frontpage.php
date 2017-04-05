@@ -20,14 +20,11 @@ $img = $img['url'];
 
 $style = 'background-image: url(' . $img . ')';
 ?>
-<div style="<?php echo $style; ?>" class="header-block is-extra-responsive">
-    <p>
+<div style="<?php echo $style; ?>" class="header-block">
+    <h1>
         <?php the_field('image_text'); ?>
-    </p>
+    </h1>
 </div>
-
-?>
-
 
 <div class="contentblock">
     <div class="title">

@@ -19,14 +19,14 @@ $img = $img['url'];
 $style = 'background-image: url(' . $img . ')';
 ?>
 <div style="<?php echo $style; ?>" class="header-block">
-    <p>
+    <h1>
         <?php the_field('image_text'); ?>
-    </p>
+    </h1>
 </div>
 
 <div class="container hinnasto">
     <div class="row">
-        <div class="col-md-10"><h1 class="largetitle">SOPII YRITYKSILLE JA YKSITYISHENKILÖILLE</h1></div>
+        <div class="col-md-12"><h1 class="largetitle">SOPII YRITYKSILLE JA YKSITYISHENKILÖILLE</h1></div>
     </div>
 </div>
 <div class="container">

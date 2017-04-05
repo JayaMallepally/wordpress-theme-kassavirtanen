@@ -18,9 +18,9 @@ $img = $img['url'];
 $style = 'background-image: url(' . $img . ')';
 ?>
 <div style="<?php echo $style; ?>" class="header-block">
-    <p>
+    <h1>
     <?php the_field('image_text'); ?>
-    </p>
+    </h1>
 </div>
 
 <div class="container ukk">

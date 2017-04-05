@@ -194,28 +194,32 @@
 
 .header-block {
   background-image: url("http://kassavirtanen.local/wp-content/uploads/2016/12/kassavirtanen_header.png");
-  max-width: 100%;
-  min-width: 90%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 380px;
   background-size: cover;
   background-repeat: no-repeat;
-  word-wrap: break-word; }
-  @media screen and (max-width: 600px) {
-    .header-block.is-extra-responsive {
-      background-position-x: -160px; } }
-  @media screen and (max-width: 330px) {
-    .header-block.is-extra-responsive {
-      background-position-x: -500px; } }
-  .header-block p {
+  word-wrap: break-word;
+  background-position: center; }
+  .header-block > h1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 2.3em;
     text-transform: uppercase;
     color: #ffffff;
-    text-shadow: 1px 0px #7D7979;
-    padding-top: 6%;
+    text-shadow: 0px 1px 5px #7D7979;
     margin: 0;
-    margin-bottom: 10px;
     text-align: center; }
 
 .header-image img {

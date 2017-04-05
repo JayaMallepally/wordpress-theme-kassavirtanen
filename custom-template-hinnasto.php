@@ -16,17 +16,12 @@ $img = get_field('top_image');
 $img = $img['url'];
 
 $style = 'background-image: url(' . $img . ')';
-
-echo '<div style="' . $style . '" class="header-block">';
-
-
-echo '<p>';
-the_field('image_text');
-echo '</p>';
-
-echo '</div>';
-
 ?>
+<div style="<?php echo $style; ?>" class="header-block">
+    <h1>
+        <?php the_field('image_text'); ?>
+    </h1>
+</div>
 
 <?php
 

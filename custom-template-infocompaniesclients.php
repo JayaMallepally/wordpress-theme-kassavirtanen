@@ -44,6 +44,8 @@ $style = 'background-image: url(' . $img . ')';
                     </p>
                 </div>
             </div>
+
+            <img src="<?php echo get_field('image1')["url"]; ?>" style="width: 100%">
         </div>
 
         <div class= "col-md-6" >
@@ -59,15 +61,7 @@ $style = 'background-image: url(' . $img . ')';
                     </p>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class= "col-md-6">
-            <img src="<?php echo get_field('image1')["url"]; ?>" style="width: 100%">
-        </div>
-
-        <div class= "col-md-6">
             <img src="<?php echo get_field('image2')["url"]; ?>" style="width: 100%">
         </div>
     </div>

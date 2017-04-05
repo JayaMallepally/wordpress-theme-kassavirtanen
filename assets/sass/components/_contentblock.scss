@@ -1,0 +1,53 @@
+.contentblock {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+
+  &.is-colored {
+    background-color: $main-layout-color;
+    color: white;
+  }
+
+  &.is-paddingless>* {
+    padding: 0 !important;
+
+    @media screen and (max-width: 800px) {
+      padding: 0 20px 0 20px !important;
+    }
+
+    @media screen and (min-width: 771px) and (max-width: 779px ) {
+      button {
+        margin-top: 15px !important;
+      }
+    }
+  }
+
+  >*{
+    max-width: 1200px;
+
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 100px 0 100px !important;
+    }
+
+    @media screen and (max-width: 600px) {
+      padding: 0 20px 0 20px !important;
+    }
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-weight: bold;
+
+    margin: auto auto;
+    margin-bottom: 15px;
+
+    &.is-marginless {
+      margin-bottom: 0px;
+    }
+  }
+
+  .content {
+    padding: 0px;
+    margin: auto auto;
+  }
+}

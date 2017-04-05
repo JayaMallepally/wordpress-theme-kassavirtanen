@@ -1,0 +1,30 @@
+.login-panel {
+  width: 100%;
+  height: $login-panel-height;
+  background-color: $main-layout-color;
+  z-index: 1000000;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &-buttons {
+    border-left: 1px solid white;
+    height: 100%;
+    color: white;
+
+    >a {
+      position: relative;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: white;
+      padding: 6px 15px 0 15px;
+      height: $login-panel-height;
+      font-size: 0.9em;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

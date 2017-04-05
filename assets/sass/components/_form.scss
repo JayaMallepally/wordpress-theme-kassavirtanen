@@ -1,0 +1,22 @@
+.register-input {
+  height: 40px !important;
+  text-align: center;
+  background-color: $main-layout-color !important;
+  border-color: $white-color !important;
+  box-sizing: border-box;
+  margin-right: 30px !important;
+
+  @media screen and (max-width: 1376px) {
+    margin-right: 10px !important;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    margin-right: 0px !important;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: $white-color !important;
+  font-size: 1em !important;
+}

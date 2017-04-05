@@ -1,0 +1,26 @@
+.button {
+  margin: 0 !important;
+  height: 40px !important;
+  width: 150px !important;
+  text-align: center;
+  background-color: $background-color !important;
+  color: $main-layout-color !important;
+
+  &-nav {
+    display: inline-block;
+    font-family: $main-default-font;
+    font-weight: 600;
+  }
+
+  &-login {
+    font-weight: 600;
+  }
+}
+
+.menu-toggle {
+  font-size: 13px;
+
+  @media screen and (min-width: 44.375em) {
+    font-size: 16px;
+  }
+}

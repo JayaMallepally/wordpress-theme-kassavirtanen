@@ -1,12 +1,21 @@
 <?php
 /**
- * author:      Skylar Kong
+ * author:      Skylar Kong | Kristian Lauttamus
  * version:     1.0.0
  * created:     27.12.2016
  *
  */
 
-function kassavirtanen_style_script() {
+function load_fonts() {
+
+    wp_register_style( 'et-googleFonts',
+        'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300'
+    );
+
+    wp_enqueue_style( 'et-googleFonts' );
+}
+
+function kassavirtanen_styles() {
 
     $parent_style = 'twentysixteen';
     $child_style = 'twentysixteen-child';
@@ -18,7 +27,7 @@ function kassavirtanen_style_script() {
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
 
     // Enqueue child theme stylesheet
-    wp_enqueue_style( 'twentysixteen-child',
+    wp_enqueue_style( $child_style,
         get_stylesheet_directory_uri() . '/style.css',
         array( $parent_style ),
         $kassavirtanen_version
@@ -55,17 +64,8 @@ function kassavirtanen_scripts() {
     );
 }
 
-function load_fonts() {
-
-    wp_register_style( 'et-googleFonts',
-        'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300'
-    );
-
-    wp_enqueue_style( 'et-googleFonts' );
-}
-
 add_action( 'wp_print_styles', 'load_fonts' );
-add_action( 'wp_enqueue_scripts', 'kassavirtanen_style_script' );
+add_action( 'wp_enqueue_scripts', 'kassavirtanen_styles' );
 add_action( 'wp_enqueue_scripts', 'kassavirtanen_scripts' );
 
 ?>

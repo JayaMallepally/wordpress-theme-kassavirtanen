@@ -39,7 +39,7 @@
 
         <div class="login-panel">
             <div class="pull-right login-panel-buttons">
-                <a href="/?page_id=124">
+                <a href="/dashboard">
                     <i class="fa fa-lock fa-fw"></i> Kirjaudu sisään
                 </a>
             </div>

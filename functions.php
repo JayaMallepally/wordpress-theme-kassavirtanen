@@ -48,7 +48,7 @@ function kassavirtanen_styles() {
 
 function kassavirtanen_scripts() {
 
-    if ( is_page_template( 'custom-signup' ) ) {
+    if ( is_page_template( 'custom-template-signup.php' ) ) {
         wp_enqueue_script('cashflow-react',
             get_stylesheet_directory_uri() . '/scripts/app.js',
             array(),

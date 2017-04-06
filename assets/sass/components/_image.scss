@@ -1,0 +1,10 @@
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >.image-holder {
+    flex: 1;
+    text-align: center;
+  }
+}

@@ -38,72 +38,80 @@ $img = $img['url'];
     <div class="row">
         <div class= "col-md-4 hinnasto-panel">
             <div class="separated-panel">
-                <div class="title"><h2>
-<?php
-the_field('column1_name');
-echo '</h2></div>';
-echo '<div class="content"><p>';
-the_field('column1_text');
-echo '</p></div>';
-echo '</div>';
-echo '</div>';
-
-echo '<div class= "col-md-4 hinnasto-panel">';
-echo '<div class="separated-panel">';
-echo '<div class="title"><h2>';
-the_field('column2_name');
-echo '</h2></div>';
-echo '<div class="content"><p>';
-the_field('column2_text');
-echo '</p></div>';
-echo '</div>';
-echo '</div>';
-
-echo '<div class= "col-md-4 hinnasto-panel">';
-echo '<div class="separated-panel">';
-echo '<div class="title"><h2>';
-the_field('column3_name');
-echo '</h2></div>';
-echo '<div class="content"><p>';
-the_field('column3_text');
-echo '</p></div>';
-echo '</div>';
-echo '</div>';
-
-echo '<div class= "col-md-7 hinnasto-panel">';
-echo '<div>';
-echo '<img src=' . $img . '>';
-echo '</div>';
-echo '</div>';
-
-echo '<div class= "col-md-5 hinnasto-panel">';
-echo '<div class="separated-panel">';
-echo '<div class="title"><h2>';
-the_field('column4_name');
-echo '</h2></div>';
-echo '<div class="content"><p>';
-the_field('column4_text');
-echo '</p></div>';
-echo '</div>';
-echo '</div>';
-
-
-echo '<div class= "col-md-12 hinnasto-lowpanel">';
-echo '<div class="lowpanel">';
-echo '<p>';
-echo '<h2>';
-the_field('column5_name');
-echo '</h2>';
-echo '<p>';
-the_field('column5_text');
-echo '</p>';
-echo '</div>';
-echo '</div>';
-
-
-
-echo '</div>';
-echo '</div>';
-?>
+                <div class="title">
+                    <h2>
+                        <?php the_field('column1_name'); ?>
+                    </h2>
+                </div>
+                <div class="content">
+                    <p>
+                        <?php the_field('column1_text'); ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class= "col-md-4 hinnasto-panel">
+            <div class="separated-panel">
+                <div class="title">
+                    <h2>
+                        <?php the_field('column2_name'); ?>
+                    </h2>
+                </div>
+                <div class="content">
+                    <p>
+                        <?php the_field('column2_text'); ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class= "col-md-4 hinnasto-panel">
+            <div class="separated-panel">
+                <div class="title">
+                    <h2>
+                        <?php the_field('column3_name'); ?>
+                    </h2>
+                </div>
+                <div class="content">
+                    <p>
+                        <?php the_field('column3_text'); ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col-md-7 hinnasto-panel image-center">
+            <div class="image-holder">
+                <img src="<?php echo $img; ?>">
+            </div>
+        </div>
+        <div class= "col-md-5 hinnasto-panel">
+            <div class="separated-panel">
+                <div class="title">
+                    <h2>
+                        <?php the_field('column4_name'); ?>
+                    </h2>
+                </div>
+                <div class="content">
+                    <p>
+                        <?php the_field('column4_text'); ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col-md-12 hinnasto-lowpanel">
+            <div class="lowpanel">
+                <h2>
+                    <?php the_field('column5_name'); ?>
+                </h2>
+                <p>
+                    <?php the_field('column5_text'); ?>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php get_footer(); ?>

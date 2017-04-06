@@ -152,6 +152,8 @@
     @media screen and (max-width: 56.875em) {
       .main-navigation li:nth-child(2) {
         width: 100%; } }
+  .main-navigation li.current-menu-item > a {
+    text-decoration: underline; }
   .main-navigation a {
     text-transform: uppercase;
     font-weight: bold;

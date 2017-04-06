@@ -1,22 +1,28 @@
 .main-navigation {
   font-family: $main-default-font;
 
-  li:first-child {
+  li {
+    &:first-child {
 
-    @media screen and (max-width: 56.875em) {
-      width: 100%;
+      @media screen and (max-width: 56.875em) {
+        width: 100%;
+      }
+
+      width: 100px;
     }
 
-    width: 100px;
-  }
+    &:nth-child(2) {
 
-  li:nth-child(2) {
+      @media screen and (max-width: 56.875em) {
+        width: 100%;
+      }
 
-    @media screen and (max-width: 56.875em) {
-      width: 100%;
+      width: 120px;
     }
 
-    width: 120px;
+    &.current-menu-item>a {
+      text-decoration: underline;
+    }
   }
 
   a {

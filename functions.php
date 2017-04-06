@@ -48,12 +48,14 @@ function kassavirtanen_styles() {
 
 function kassavirtanen_scripts() {
 
-    wp_enqueue_script( 'cashflow-react',
-        get_stylesheet_directory_uri() . '/scripts/app.js',
-        array(),
-        null,
-        true
-    );
+    if ( is_page_template( 'custom-signup' ) ) {
+        wp_enqueue_script('cashflow-react',
+            get_stylesheet_directory_uri() . '/scripts/app.js',
+            array(),
+            null,
+            true
+        );
+    }
 
 
     wp_enqueue_script( 'collapsepanel',

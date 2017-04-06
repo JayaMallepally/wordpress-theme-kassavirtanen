@@ -281,6 +281,22 @@
             flex: 1;
     text-align: center; }
 
+.someicons .a2a_kit {
+  text-align: center; }
+  .someicons .a2a_kit > a {
+    width: 25%;
+    font: normal normal normal 28px/1 FontAwesome; }
+    .someicons .a2a_kit > a.a2a_button_facebook::before {
+      content: "\F09A"; }
+    .someicons .a2a_kit > a.a2a_button_twitter::before {
+      content: "\F099"; }
+    .someicons .a2a_kit > a.a2a_button_instagram::before {
+      content: "\F16D"; }
+    .someicons .a2a_kit > a.a2a_button_snapchat::before {
+      content: "\F2AB"; }
+    .someicons .a2a_kit > a > * {
+      display: none; }
+
 body, button, input, select, textarea {
   font-family: "Open Sans"; }
 

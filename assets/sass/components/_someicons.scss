@@ -1,0 +1,34 @@
+.someicons {
+  .a2a_kit {
+    text-align: center;
+
+    >a {
+      width: 25%;
+      font: normal normal normal 28px/1 FontAwesome;
+
+      // Facebook
+      &.a2a_button_facebook::before {
+        content: "\f09a";
+      }
+
+      // Twitter
+      &.a2a_button_twitter::before {
+        content: "\f099";
+      }
+
+      // Instagram
+      &.a2a_button_instagram::before {
+        content: "\f16d";
+      }
+
+      // Snapchat
+      &.a2a_button_snapchat::before {
+        content: "\f2ab";
+      }
+
+      >* {
+        display: none;
+      }
+    }
+  }
+}

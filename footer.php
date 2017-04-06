@@ -32,11 +32,17 @@
 
                 <div class="footer-icons">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-xs-3"><a href="#"><i class="fa fa-fw fa-facebook fa-3" aria-hidden="true"></i></a></div>
-                            <div class="col-xs-3"><a href="#"><i class="fa fa-fw fa-twitter fa-3" aria-hidden="true"></i></a></div>
-                            <div class="col-xs-3"><a href="#"><i class="fa fa-fw fa-instagram fa-3" aria-hidden="true"></i></a></div>
-                            <div class="col-xs-3"><a href="#"><i class="fa fa-fw fa-snapchat fa-3" aria-hidden="true"></i></a></div>
+                        <div class="row someicons">
+                            <?php if ( function_exists( 'ADDTOANY_FOLLOW_KIT' ) ) {
+                                ADDTOANY_FOLLOW_KIT( array(
+                                    'buttons' => array(
+                                        'facebook'  => array( 'id' => 'kassavirtanen' ),
+                                        'twitter' => array( 'id' => 'kassavirtanen' ),
+                                        'instagram' => array( 'id' => 'kassavirtanen' ),
+                                        'snapchat'   => array( 'id' => 'kassavirtanen' ),
+                                    ),
+                                ) );
+                            } ?>
                         </div>
                     </div>
                 </div>

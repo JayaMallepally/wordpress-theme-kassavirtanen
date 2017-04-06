@@ -4,3 +4,4 @@
 node_modules
 assets/sass-dummy.js
 assets/stylesheet/main.css
+scripts/app.js

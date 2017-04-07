@@ -8,6 +8,7 @@
     "predist": "rimraf assets/stylesheet/main.css; rimraf assets/sass-dummy.js",
     "dist": "webpack --progress --colors",
     "dev": "webpack --progress --colors --watch",
+    "license": "./node_modules/.bin/license-to-fail ./cfg/license-check-config.js",
     "test": "test"
   },
   "repository": {
@@ -20,6 +21,8 @@
     "autoprefixer-loader": "^3.2.0",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "license-checker": "^9.0.2",
+    "license-to-fail": "^2.2.0",
     "node-sass": "^4.1.1",
     "rimraf": "^2.5.4",
     "sass-loader": "^4.1.1",

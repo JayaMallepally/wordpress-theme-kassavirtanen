@@ -66,6 +66,11 @@ function kassavirtanen_scripts() {
     );
 }
 
+function dashboard_rewrite_rule() {
+    add_rewrite_rule('dashboard\/.+', 'index.php/dashboard/', 'top');
+}
+
+add_action( 'init', 'dashboard_rewrite_rule');
 add_action( 'wp_print_styles', 'load_fonts' );
 add_action( 'wp_enqueue_scripts', 'kassavirtanen_styles' );
 add_action( 'wp_enqueue_scripts', 'kassavirtanen_scripts' );

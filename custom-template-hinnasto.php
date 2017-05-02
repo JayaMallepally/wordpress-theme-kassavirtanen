@@ -1,6 +1,6 @@
 <?php
 /**
- * Author: Erno Koliseva / Olli Somero
+ * Author: PHZ
  * version:     1.0.0
  * created:     04.04.2017
  *

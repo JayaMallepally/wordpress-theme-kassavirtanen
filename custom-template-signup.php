@@ -1,6 +1,6 @@
 <?php
 /**
- * author:      Skylar Kong
+ * author:      PHZ
  * version:     1.0.0
  * created:     30.12.2016
  *

@@ -41,15 +41,15 @@ $style = 'background-image: url(' . $img . ')';
     </div>
     <div class="content">
         <?php the_field('column2_text'); ?>
-        <form class="form-inline">
+        <form class="form-inline" method="GET" action="/dashboard/register">
             <div class="form-group">
-                <input class="register-input form-control" type="text" placeholder="ETUNIMI"/>
+                <input name="first_name" class="register-input form-control" type="text" placeholder="ETUNIMI"/>
             </div>
             <div class="form-group">
-                <input class="register-input form-control" type="text" placeholder="SUKUNIMI"/>
+                <input name="last_name" class="register-input form-control" type="text" placeholder="SUKUNIMI"/>
             </div>
             <div class="form-group">
-                <input class="register-input form-control" type="text" placeholder="SÄHKÖPOSTI"/>
+                <input name="email" class="register-input form-control" type="email" placeholder="SÄHKÖPOSTI"/>
             </div>
             <div class="form-group">
                 <button type="submit" class="button">LIITY NYT</button>

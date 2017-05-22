@@ -16,7 +16,7 @@
     "url": "git@git.in.phz.fi:phz/wordpress-theme-kassavirtanen.git"
   },
   "author": "Skylar Kong",
-  "license": "MIT",
+  "license": "GPL-2.0",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "css-loader": "^0.26.1",
